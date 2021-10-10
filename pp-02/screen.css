@@ -7,3 +7,24 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px; /*18 / 16 =1.125 */
+  line-height: 26.4px;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  padding-bottom: 26.4px;
+}
+h1 {
+  font-size: 42.969px;
+}
+h2 {
+  font-size: 34.375px;
+}
+h3 {
+  font-size: 27.5px;
+}
