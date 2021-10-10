@@ -21,8 +21,11 @@ p {
 }
 
 h1 {
-  font-size: 34.375px;
+  font-size: 34.375px; /*Modular table with base 22*/
+  line-height: 40px; /*26.4 * 1.5 ~ 40*/
 }
 h2 {
-  font-size: 27.5px;
+  font-size: 27.5px; /*Modular table with base 22 */
+  line-height: 30px; /*26.4 * 1.25 ~ 30 */
+  font-weight: bold;
 }
