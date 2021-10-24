@@ -32,12 +32,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 main {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
+  flex-direction: column-reverse;
 }
 
 section {
-  height: 100vh;
+  height: 33vh;
   width: 100vw;
 }
 #three,
@@ -47,10 +46,22 @@ section {
 }
 
 @media screen and (min-width: 600px) {
-
-
+  main{
+  }
+  .one {
+    width: 50%;
+  }
+  .two {
+    width: 50%;
+  }
+  .three {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 800px) {
-
+  main {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
 }
