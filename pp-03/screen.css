@@ -30,7 +30,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #content {
 
 }
+main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
 
+section {
+  height: 100vh;
+  width: 100vw;
+}
 #three,
 #two,
 #one {
@@ -38,6 +47,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 @media screen and (min-width: 600px) {
+
 
 }
 
