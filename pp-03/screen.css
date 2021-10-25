@@ -25,43 +25,48 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   background-color: red;
 }
 
-
 /* ==== LAYOUT STYLES ==== */
 #content {
-
-}
-main {
-  display: flex;
-  flex-direction: column-reverse;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
 }
 
-section {
-  height: 33vh;
-  width: 100vw;
-}
+
 #three,
 #two,
 #one {
-
+  margin: 40px auto auto;
+  height: 100vw;
+  height: 100vh;
+  flex: 1;
 }
 
 @media screen and (min-width: 600px) {
-  main{
+  #content {
+    display: flex;
+    flex-direction: row-reverse;
   }
-  .one {
-    width: 50%;
+  #three {
+    flex: 2;
+    align-items: stretch flex-end;
   }
-  .two {
-    width: 50%;
+  #two {
+    flex: 1;
   }
-  .three {
-    width: 100%;
+  #one {
+    flex: 1;
   }
 }
 
 @media screen and (min-width: 800px) {
-  main {
+  #content {
+    display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+  }
+  #three,
+  #two,
+  #one {
+    flex: 1;
   }
 }
