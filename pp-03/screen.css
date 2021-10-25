@@ -45,17 +45,20 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 @media screen and (min-width: 600px) {
   #content {
     display: flex;
-    flex-direction: row-reverse;
+    flex-flow: column-reverse wrap-reverse;
+    gap: 10px;
   }
   #three {
-    flex: 2;
-    align-items: stretch flex-end;
+    width: 100vw;
+    height: 100vh;
   }
   #two {
-    flex: 1;
+    width: 50vw;
+    height: 100vh;
   }
   #one {
-    flex: 1;
+    width: 50vw;
+    height: 100vh;
   }
 }
 
@@ -63,6 +66,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   #content {
     display: flex;
     flex-direction: row-reverse;
+    gap: 10px;
   }
   #three,
   #two,
