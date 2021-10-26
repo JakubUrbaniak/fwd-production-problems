@@ -37,28 +37,21 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #two,
 #one {
   margin: 40px auto auto;
-  height: 100vw;
   height: 100vh;
-  flex: 1;
 }
 
 @media screen and (min-width: 600px) {
   #content {
-    display: flex;
-    flex-flow: column-reverse wrap-reverse;
-    gap: 10px;
+    flex-flow: row-reverse wrap-reverse;
+
+  }
+  #two,
+  #one {
+    flex: 1 0 50%;
+    height: 50vw;
   }
   #three {
-    width: 100vw;
-    height: 100vh;
-  }
-  #two {
-    width: 50vw;
-    height: 100vh;
-  }
-  #one {
-    width: 50vw;
-    height: 100vh;
+    flex: 1 0 100%;
   }
 }
 
