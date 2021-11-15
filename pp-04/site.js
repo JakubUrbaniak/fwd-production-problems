@@ -4,10 +4,10 @@
   `x` as the variable inside the function, however.
 */
 
-x = 5;
+const x = 5;
 
 function double(num) {
-  x = num * 2;
+  let x = num * 2;
   return x;
 }
 
