@@ -6,10 +6,12 @@
 
 const x = 5;
 
-function double(num) {
+(function () {
+double = function(num) {
   let x = num * 2;
   return x;
 }
+})();
 
 double(6);
 console.log('The value of x is', x, '-- it should be 5.');
